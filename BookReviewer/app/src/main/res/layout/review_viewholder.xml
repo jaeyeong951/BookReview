@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_panel"
+
+        android:paddingLeft="16dp"
+      >
+
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_smile" />
+        <TextView
+            android:id="@+id/reviewer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="steven"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/smile"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/reveiwer_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="2017-12-13"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="336dp"
+            android:layout_height="247dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#75FFEDB1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+            <RatingBar
+                android:id="@+id/reviewer_bookstar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:isIndicator="false"
+                android:max="10"
+                android:numStars="10"
+                android:stepSize="0.1" />
+
+
+            <ScrollView
+                android:id="@+id/childScroll"
+                android:layout_below="@+id/reviewer_bookstar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="315dp"
+                    android:layout_height="204dp"
+                    android:layout_marginTop="3dp"
+                    android:text="TextView"
+                     />
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

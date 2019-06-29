@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "705495020909",
+    "firebase_url": "https://bookreviewerlogin.firebaseio.com",
+    "project_id": "bookreviewerlogin",
+    "storage_bucket": "bookreviewerlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705495020909:android:a2c839b978ff5806",
+        "android_client_info": {
+          "package_name": "com.example.bookreviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705495020909-iep8ce1p8maf8a5rc9584d5ur4bqsg85.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookreviewer",
+            "certificate_hash": "5ff71a56cafebc9f0b20d0b45f445b869fa3e392"
+          }
+        },
+        {
+          "client_id": "705495020909-0n5vq2b3fnb0l12fkess3nr2emid14ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG1TjTjAUiLI2x2eNvlSNQSKJKpf37niI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705495020909-0n5vq2b3fnb0l12fkess3nr2emid14ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

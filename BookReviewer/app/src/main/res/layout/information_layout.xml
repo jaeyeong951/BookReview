@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F7A74E"
+        android:padding="10dp">
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/backbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+        <TextView
+            android:id="@+id/info_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/backbutton"
+            android:layout_centerVertical="true"
+            android:text="Site1"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"/>
+        <ImageButton
+            android:id="@+id/gotoReviewActivity"
+            android:layout_marginTop="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_review"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_panel"
+        android:layout_margin="16dp"
+        android:background="#75FFEDB1"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of book"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/bookcart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_bookmark"/>
+
+        <ImageView
+            android:id="@+id/info_bookImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/info_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/info_bookcontext"
+            android:layout_width="363dp"
+            android:layout_height="372dp"
+            android:layout_above="@+id/to_see_more_info"
+            android:layout_below="@+id/info_bookImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="13dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/to_see_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/gotoBooksite"
+            android:text="to see more information..." />
+
+        <TextView
+            android:id="@+id/gotoBooksite"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="go to site1"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/info_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/info_Publisher"
+            android:layout_toEndOf="@+id/info_bookImage"
+            android:layout_toRightOf="@+id/info_bookImage"
+            android:text="Author: kim jae" />
+
+
+        <TextView
+            android:id="@+id/info_Publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/info_price"
+            android:layout_toEndOf="@+id/info_bookImage"
+            android:layout_toRightOf="@+id/info_bookImage"
+            android:text="Publisher: A" />
+        <TextView
+            android:id="@+id/info_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/info_Date"
+            android:layout_toEndOf="@+id/info_bookImage"
+            android:layout_toRightOf="@+id/info_bookImage"
+            android:text="Price: " />
+
+
+        <TextView
+            android:id="@+id/info_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/information_bookstar"
+            android:layout_toEndOf="@+id/info_bookImage"
+            android:layout_toRightOf="@+id/info_bookImage"
+            android:text="Date: 2017/12/21" />
+
+
+        <RatingBar
+            android:id="@+id/information_bookstar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/info_bookcontext"
+            android:layout_toEndOf="@+id/info_bookImage"
+            android:layout_toRightOf="@+id/info_bookImage"
+            android:layout_marginBottom="10dp"
+            android:isIndicator="false"
+            android:max="10"
+            android:numStars="10"
+            android:stepSize="0.1" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

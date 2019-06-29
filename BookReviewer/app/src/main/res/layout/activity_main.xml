@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#F9F6F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#F7A74E"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/layout_corner"
+                android:paddingLeft="3dp"
+                android:textColor="#FFFFFF"
+                />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/clear_button"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="70dp"
+                android:background="#D7720C"
+                android:src="@drawable/ic_clear_black_24dp" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/tag"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:background="#D7720C"
+                android:src="@android:drawable/ic_menu_sort_by_size" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/stroke_recommend"
+                        android:layout_marginBottom="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="교보문고"
+                            android:textStyle="bold"/>
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recommend_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/stroke_recommend"
+                        android:layout_marginBottom="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yes24"
+                            android:textStyle="bold"/>
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recommend_recycler_yes24"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/stroke_recommend"
+                        android:layout_marginBottom="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="알라딘"
+                            android:textStyle="bold"/>
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recommend_recycler_aladin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/stroke_recommend"
+                        android:layout_marginBottom="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="인터파크"
+                            android:textStyle="bold"/>
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recommend_recycler_interpark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/stroke_recommend"
+                        android:layout_marginBottom="16dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BANDI N LUNIS"
+                            android:textStyle="bold"/>
+                        <android.support.v7.widget.RecyclerView
+
+                            android:id="@+id/recommend_recycler_bandi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:scrollbars="vertical" />
+            <ListView
+                android:id="@+id/tagView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></ListView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.forstudy.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/apptitle_background_corner"
+            android:orientation="vertical"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+            tools:behavior_hideable="true"
+            tools:behavior_peekHeight="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/layout_corner_slide"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/user_profile1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    app:siBorderWidth="0.3dp" />
+
+                <ImageButton
+                    android:id="@+id/login_button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_person"
+                    android:text="로그인" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/slide_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_bookmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="BookMark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
